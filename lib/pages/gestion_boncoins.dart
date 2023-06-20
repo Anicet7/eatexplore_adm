@@ -8,16 +8,17 @@ import 'package:page_transition/page_transition.dart';
 import '../models/client_model.dart';
 import '../values/app_colors.dart';
 import 'admins/admins_details.dart';
+import 'bonCoins/bonCoins_details.dart';
 import 'clients/clients_details.dart';
 
-class ComptesAdmin extends StatefulWidget {
-  const ComptesAdmin({super.key});
+class GestionBonCoins extends StatefulWidget {
+  const GestionBonCoins({super.key});
 
   @override
-  State<ComptesAdmin> createState() => _ComptesAdminState();
+  State<GestionBonCoins> createState() => _GestionBonCoinsState();
 }
 
-class _ComptesAdminState extends State<ComptesAdmin> {
+class _GestionBonCoinsState extends State<GestionBonCoins> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,6 +46,10 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+
+                      ///
+                      ///
+                      ///
                       // Bienvenue
                       Container(
                         // width: MediaQuery.of(context).size.width/2,
@@ -62,7 +67,7 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                               Align(
                                   alignment: Alignment.centerLeft,
                                   child: Text(
-                                    "Gestion des comptes administrateurs",
+                                    "BonCoins",
                                     maxLines: 3,
                                     overflow: TextOverflow.ellipsis,
                                     style: GoogleFonts.aleo(
@@ -84,7 +89,7 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                       ///
                       ///
 
-                      // Statistique comptes
+                      // Statistique Bon coin
                       Visibility(
                         // visible: (currentUser?.statut_admin == true) || ( (currentUser != null) ?  (currentUser!.type_compte >= 3) : ( (currentUser?.type_compte ?? 2) >= 3)  ) ,
                         child: SingleChildScrollView(
@@ -92,7 +97,9 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              // Comptes totale
+
+
+                              // BonCoins totale
                               SizedBox(
                                 width: (MediaQuery.of(context).size.width <= 800 ) ? 280 : MediaQuery.of(context).size.width / 4.6,
                                 child: Padding(
@@ -100,7 +107,7 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                                   child: Card(
                                     //  color: Couleurs.corlor_app_blue_gama,
                                     // color: Couleurs.corlor_app_blue_d2a,
-                                    color: Colors.blue.withOpacity(0.8),
+                                    color: Colors.cyan.withOpacity(0.8),
                                     elevation: 20,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(15),
@@ -125,11 +132,11 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                                           // );
                                         },
                                         title: const Text(
-                                          "Comptes admin",
+                                          "BonCoins",
                                           style: TextStyle(color: Colors.black),
                                         ),
                                         subtitle: const Text(
-                                          "Utilisateurs enregistrés",
+                                          "Emplacements enregistrés",
                                           style: TextStyle(
                                               color: Colors.black,
                                               fontSize: 10),
@@ -153,7 +160,7 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                                 ),
                               ),
 
-                              // Comptes actif
+                              // BonCoins actif
                               SizedBox(
                                // width: MediaQuery.of(context).size.width / 4.6,
                                 width: (MediaQuery.of(context).size.width <= 800 ) ? 280 : MediaQuery.of(context).size.width / 4.6,
@@ -166,7 +173,7 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                                         //Couleurs.corlor_app_blue_grey_d2a,
                                         //   color: Colors.blueAccent,
                                         // color:
-                                        Colors.green.withOpacity(0.4),
+                                        Colors.orange.withOpacity(0.4),
                                     elevation: 20,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(15),
@@ -192,11 +199,11 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                                           // );
                                         },
                                         title: const Text(
-                                          "Comptes actifs",
+                                          "BonCoins actifs",
                                           style: TextStyle(color: Colors.black),
                                         ),
                                         subtitle: const Text(
-                                          "Utilisateurs actifs",
+                                          "Emplacements validés",
                                           style: TextStyle(
                                               color: Colors.black,
                                               fontSize: 10),
@@ -221,7 +228,7 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                                 ),
                               ),
 
-                              // Comptes inatif
+                              // BonCoins inatif
                               SizedBox(
                                // width: MediaQuery.of(context).size.width / 4.6,
                                 width: (MediaQuery.of(context).size.width <= 800 ) ? 280 : MediaQuery.of(context).size.width / 4.6,
@@ -234,7 +241,7 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                                         //Couleurs.corlor_app_blue_grey_d2a,
                                         //   color: Colors.blueAccent,
                                         // color:
-                                        Colors.red.withOpacity(0.2),
+                                        Colors.redAccent.withOpacity(0.2),
                                     elevation: 20,
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(15),
@@ -260,11 +267,11 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                                           // );
                                         },
                                         title: const Text(
-                                          "Comptes inactifs",
+                                          "BonCoins inactifs",
                                           style: TextStyle(color: Colors.black),
                                         ),
                                         subtitle: const Text(
-                                          "Utilisateurs inactifs",
+                                          "Emplacements en attente",
                                           style: TextStyle(
                                               color: Colors.black,
                                               fontSize: 10),
@@ -336,11 +343,11 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                                   // );
                                 },
                                 title: const Text(
-                                  "Accéder à compte administrateur",
+                                  "Accéder aux BonCoins",
                                   style: TextStyle(color: Colors.black, fontSize: 12, fontWeight: FontWeight.bold),
                                 ),
                                 subtitle: const Text(
-                                  "Rechercher des admin",
+                                  "Rechercher des BonCoins",
                                   style: TextStyle(
                                       color: Colors.black,
                                       fontSize: 10),
@@ -376,12 +383,12 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                       ),
 
 
-                      // Liste des comptes
+                      // Liste des BonCoins
                       Container(
                         margin: const EdgeInsets.only(left: 15, right: 15, top: 20.0, bottom: 00.0),
                         child: Align(
                             alignment: Alignment.centerLeft,
-                            child: Text("Listes des comptes administrateurs",
+                            child: Text("Listes des Bon coins",
                               maxLines: 3,
                               overflow: TextOverflow.ellipsis,
                               style: GoogleFonts.aleo(textStyle: const TextStyle(
@@ -404,11 +411,11 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                       ///
                       ///
 
-                      admin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
-                      admin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false,date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
-                      admin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
-                      admin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
-                      admin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
+                      bonCoin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
+                      bonCoin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false,date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
+                      bonCoin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
+                      bonCoin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
+                      bonCoin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
 
 
                     ],
@@ -421,11 +428,19 @@ class _ComptesAdminState extends State<ComptesAdmin> {
           ],
         ),
       ),
+
+        floatingActionButton: FloatingActionButton.extended(
+          onPressed: (){
+
+          },
+          label: const Text("Ajouter un BonCoin"),
+          icon: const Icon(Icons.place_sharp),
+        ),
     );
   }
 
 
-  Widget admin_widget ({required ClientUser client})
+  Widget bonCoin_widget ({required ClientUser client})
   {
 
     return  Card(
@@ -472,18 +487,19 @@ class _ComptesAdminState extends State<ComptesAdmin> {
             context,
             PageTransition(
                 type: PageTransitionType.rightToLeft,
-                child: AdminsDetails(clients:  client),
+                child: BonCoinsDetails(clients:  client),
                 inheritTheme: true,
                 ctx: context),
           );
 
         },
-        leading: Icon(Icons.supervised_user_circle, size: 35, color: (client.activer == true) ? Colors.green : Colors.red,),
+        leading: Icon(Icons.map, size: 35, color: (client.activer == true) ? Colors.green : Colors.red,),
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(client.nom,style: const TextStyle(fontWeight: FontWeight.w500)),
             Text(client.email,style: const TextStyle(fontWeight: FontWeight.w500)),
+            Text("localisation",style: const TextStyle(fontWeight: FontWeight.w500)),
 
           ],
         ),

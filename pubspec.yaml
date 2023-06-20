@@ -91,6 +91,12 @@ dependencies:
   ##dual_screen: ^1.0.4
   ##responsive_table: ^0.2.0+2
 
+
+  ## Maps
+  google_maps_flutter: ^2.3.0
+  google_maps_flutter_web: ^0.5.0+1
+
+
   #######################
   #######################
   #######################

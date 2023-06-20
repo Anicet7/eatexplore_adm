@@ -5,6 +5,7 @@ import 'dart:io';
 //import 'package:firebase_auth/firebase_auth.dart';
 import 'package:eatexplore_adm/pages/comptes_admins.dart';
 import 'package:eatexplore_adm/pages/comptes_clients.dart';
+import 'package:eatexplore_adm/pages/gestion_boncoins.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -428,14 +429,13 @@ class _ScreensDashboard extends StatelessWidget {
             return Container (color: Colors.black,);
             //return ListeDenonciationAttente();
 
-            //  Bon coin
+            // Gestion des Bon coins
           case 3:
-            return Container (color: Colors.red,);
-             // return   ListeDenonciationCloturer();
+            return GestionBonCoins ();
 
             // Comptes admin
           case 4:
-              return   ComptesAdmin();
+              return ComptesAdmin();
 
         // Planning
           case 5:
@@ -528,7 +528,7 @@ String _getTitleByIndex(int index) {
     case 2:
       return 'Comptes restaurants';
     case 3:
-      return 'Gestion des bon coins';
+      return 'Gestion des BonCoins';
     case 4:
       return 'Gestion des admins';
     case 5:

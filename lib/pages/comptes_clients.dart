@@ -7,7 +7,7 @@ import 'package:page_transition/page_transition.dart';
 
 import '../models/client_model.dart';
 import '../values/app_colors.dart';
-import 'clients_details.dart';
+import 'clients/clients_details.dart';
 
 class ComptesClient extends StatefulWidget {
   const ComptesClient({super.key});
