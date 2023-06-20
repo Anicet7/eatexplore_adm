@@ -39,7 +39,7 @@ class _BonCoinsDetailsState extends State<BonCoinsDetails> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Compte administrateur",
+          "Nom du BonCoin",
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.aleo(
             textStyle: const TextStyle(

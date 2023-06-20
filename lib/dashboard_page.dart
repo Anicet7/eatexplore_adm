@@ -5,7 +5,9 @@ import 'dart:io';
 //import 'package:firebase_auth/firebase_auth.dart';
 import 'package:eatexplore_adm/pages/comptes_admins.dart';
 import 'package:eatexplore_adm/pages/comptes_clients.dart';
+import 'package:eatexplore_adm/pages/comptes_restaurant.dart';
 import 'package:eatexplore_adm/pages/gestion_boncoins.dart';
+import 'package:eatexplore_adm/pages/paiements.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -319,12 +321,13 @@ class MenuDashboard extends StatelessWidget {
       },
       items: const [
 
+        ///
         // Accueil // 0
-        SidebarXItem(
-          icon: Octicons.home,
-          // iconWidget: FlutterLogo(size: 20),
-          label: 'Accueil',
-        ),
+        // SidebarXItem(
+        //   icon: Octicons.home,
+        //   // iconWidget: FlutterLogo(size: 20),
+        //   label: 'Accueil',
+        // ),
 
         // Comptes client // 1
         SidebarXItem(
@@ -414,43 +417,38 @@ class _ScreensDashboard extends StatelessWidget {
         final pageTitle = _getTitleByIndex(controller.selectedIndex);
         switch (controller.selectedIndex) {
 
-          // Accueil
-          case 0:
-            return Container (color: Colors.green,);
-           // return const AccueilPage ();
+          // // Accueil
+          // case 0:
+          //   return Container (color: Colors.green,);
+          //  // return const AccueilPage ();
+
 
             // Comptes Client
-          case 1:
+          case 0:
             return ComptesClient ();
 
 
             // Comptes restaurant
-          case 2:
-            return Container (color: Colors.black,);
-            //return ListeDenonciationAttente();
+          case 1:
+            return ComptesRestaurant ();
+
 
             // Gestion des Bon coins
-          case 3:
+          case 2:
             return GestionBonCoins ();
 
+
             // Comptes admin
-          case 4:
+          case 3:
               return ComptesAdmin();
 
-        // Planning
-          case 5:
-            return Container(
-             // color: Colors.black,
-              margin: const EdgeInsets.all(20),
-              child: Text(
-                  "En cours de développement",
-                  //style: theme.textTheme.headlineSmall,
-                  style: GoogleFonts.actor(fontSize: 20,color:  AppColors.Jaune)
-              ),
-            );
+
+        // Paiement
+          case 4:
+            return Paiements();
 
             // Politique de confidentailité
-          case 6:
+          case 5:
            // launchUrlStart(url: TextStatique.url_politique);
 
             return Container(
@@ -464,7 +462,7 @@ class _ScreensDashboard extends StatelessWidget {
 
             // Condition d'utilisation
             // A propos
-          case 7:
+          case 6:
             return   Center(
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -483,7 +481,7 @@ class _ScreensDashboard extends StatelessWidget {
             );
 
             // Aide et support
-          case 8:
+          case 7:
            // launchUrlStart(url: TextStatique.url_aide_support);
             // return SizedBox() ;
             // return AideSupportPage ();
