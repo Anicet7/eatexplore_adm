@@ -165,8 +165,8 @@ class _MyAppState extends State<MyApp> {
         providers: [
           ChangeNotifierProvider(create: (context) => MenuControllerNotifier()),
         ],
-        child: const DashboardPage(),
-       // child: const LoginScreen(),
+       // child: const DashboardPage(),
+        child: const LoginScreen(),
       ),
     );
 

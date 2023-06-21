@@ -404,11 +404,11 @@ class _ComptesAdminState extends State<ComptesAdmin> {
                       ///
                       ///
 
-                      admin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
-                      admin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false,date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
-                      admin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
-                      admin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
-                      admin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
+                      admin_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", token_compte: "token_compte", profil_photo: '')),
+                      admin_widget(client: ClientUser(uid: "UID",profil_photo: '', name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false,date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom",  token_compte: "token_compte")),
+                      admin_widget(client: ClientUser(uid: "UID", profil_photo: '',name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom",  token_compte: "token_compte")),
+                      admin_widget(client: ClientUser(uid: "UID",profil_photo: '', name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom",  token_compte: "token_compte")),
+                      admin_widget(client: ClientUser(uid: "UID",profil_photo: '', name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom",  token_compte: "token_compte")),
 
 
                     ],

@@ -86,7 +86,6 @@ class _ComptesRestaurantState extends State<ComptesRestaurant> {
                       ///
                       ///
                       ///
-
                       // Statistique comptes
                       Visibility(
                         // visible: (currentUser?.statut_admin == true) || ( (currentUser != null) ?  (currentUser!.type_compte >= 3) : ( (currentUser?.type_compte ?? 2) >= 3)  ) ,
@@ -577,11 +576,11 @@ class _ComptesRestaurantState extends State<ComptesRestaurant> {
                       ///
                       ///
 
-                      client_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
-                      client_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false,date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
-                      client_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
-                      client_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : false, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
-                      client_widget(client: ClientUser(uid: "UID", name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom", uid_compte: "uid_compte", token_compte: "token_compte")),
+                      client_widget(client: ClientUser(uid: "UID",profil_photo: '', name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom",  token_compte: "token_compte")),
+                      client_widget(client: ClientUser(uid: "UID",profil_photo: '', name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom",  token_compte: "token_compte")),
+                      client_widget(client: ClientUser(uid: "UID",profil_photo: '', name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom",  token_compte: "token_compte")),
+                      client_widget(client: ClientUser(uid: "UID",profil_photo: '', name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom",  token_compte: "token_compte")),
+                      client_widget(client: ClientUser(uid: "UID",profil_photo: '', name: "name", contact: "contact", nom: "nom", email: "email", adresse: "adresse",activer : true, date_inscription: DateTime.now(), date_laste_connexion: DateTime.now(), prenom: "prenom",  token_compte: "token_compte")),
 
 
                     ],
